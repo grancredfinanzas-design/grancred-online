@@ -1,0 +1,136 @@
+/* =========================================
+   Reset Básico y Variables
+   ========================================= */
+:root {
+    --color-blue: #0A1E3A;
+    --color-orange: #FF6700;
+    --color-text-body: #4A5568;
+    --color-background: #FFFFFF;
+    --color-border: #E2E8F0;
+    --font-main: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   Estructura Principal
+   ========================================= */
+body {
+    background-color: var(--color-background);
+    color: var(--color-blue);
+    font-family: var(--font-main);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor central (Restringido para legibilidad óptima) */
+.container {
+    max-width: 540px;
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* =========================================
+   Identidad Visual (Logotipos)
+   ========================================= */
+.brand-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 56px;
+}
+
+.logo-icon {
+    height: 56px;
+    width: auto;
+}
+
+.logo-text {
+    height: 24px;
+    width: auto;
+}
+
+/* =========================================
+   Tipografía y Contenido
+   ========================================= */
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--color-blue);
+    margin-bottom: 8px;
+}
+
+.highlight {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-orange);
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text-body);
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+
+.notice {
+    margin-top: 48px;
+    font-size: 0.9rem;
+    color: var(--color-blue);
+    font-weight: 400;
+}
+
+/* =========================================
+   Pie de página
+   ========================================= */
+.footer {
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid var(--color-border);
+}
+
+.footer p {
+    font-size: 0.75rem;
+    color: #718096;
+    margin-bottom: 4px;
+    font-weight: 400;
+}
+
+/* =========================================
+   Media Queries (Responsive)
+   ========================================= */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .highlight {
+        font-size: 1.25rem;
+    }
+    
+    p {
+        font-size: 1.125rem;
+    }
+    
+    .logo-icon {
+        height: 64px;
+    }
+    
+    .logo-text {
+        height: 28px;
+    }
+}
