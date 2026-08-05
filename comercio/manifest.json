@@ -1,0 +1,29 @@
+{
+  "name": "GranCred Comercio",
+  "short_name": "Comercio",
+  "description": "Plataforma oficial para comercios adheridos a GranCred",
+  "start_url": "/comercio/",
+  "scope": "/comercio/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0A3D91",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icons/gc-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/gc-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/gc-maskable-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
